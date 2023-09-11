@@ -4,7 +4,7 @@ import datetime
 
 # Define task class
 class Task:
-    def _init_(self, title, priority, due_date=None):
+    def __init__(self, title, priority, due_date=None):
         self.title = title
         self.priority = priority
         self.due_date = due_date
@@ -12,7 +12,7 @@ class Task:
 
 # Define the ToDoList class
 class ToDoList:
-    def _init_(self):
+    def __init__(self):
         self.tasks = []
 
     def add_task(self, title, priority, due_date=None):
@@ -90,5 +90,5 @@ def main():
             print("Tasks saved. Goodbye!")
             break
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
